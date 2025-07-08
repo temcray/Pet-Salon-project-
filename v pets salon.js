@@ -125,3 +125,7 @@ function registerPet(event){
     
     
 };
+
+toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });

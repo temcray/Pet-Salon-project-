@@ -1,0 +1,13 @@
+.h1-container-form{
+    background-color: rgb(209, 13, 183);
+    text-align: center;
+}
+
+.h6-container{
+    text-align: center;
+}
+
+img-container{
+    flex-direction: row;
+    padding: 10px 15px ;
+}

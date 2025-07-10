@@ -2,12 +2,12 @@
 function Service(name, description, price) {
   this.name = name;
   this.description = description;
-  this.price = parseFloat(price); // ensures price is a number
+  this.price = parseFloat(price); 
 }
 
 $(document).ready(function () {
   $('#servicesRegistrationForm').on('submit', function (e) {
-    e.preventDefault(); // prevent form from refreshing the page
+    e.preventDefault(); 
 
     // Get input values
     const name = $('#serviceName').val().trim();
@@ -43,7 +43,7 @@ $(document).ready(function () {
     const newService = new Service(name, description, price);
     console.log("Service Registered:", newService);
 
-    // Optional: Display confirmation or add it to a list on the page
+    
 
     // Reset form and remove highlights
     $('#servicesRegistrationForm')[0].reset();
@@ -54,3 +54,26 @@ $(document).ready(function () {
   });
 });
 
+function saveServiceToLocal(service) {
+      let services = JSON.parse(localStorage.getItem('services')) || [];
+      services.push(service);
+      localStorage.setItem('services', JSON.stringify(services));
+    }
+
+    function displayService(service) {
+      const li = document.createElement('li');
+      li.className = 'list-group-item d-flex justify-content-between align-items-center';
+      li.textContent = `${service.name}`;
+      const span = document.createElement('span');
+      span.className = 'badge bg-secondary rounded-pill';
+      span.textContent = `$${service.price}`;
+      li.appendChild(span);
+      serviceList.appendChild(li);
+    }
+
+    function clearForm() {
+      serviceName.value = '';
+      servicePrice.value = '';
+      serviceName.classList.remove('error');
+      servicePrice.classList.remove('error');
+    }

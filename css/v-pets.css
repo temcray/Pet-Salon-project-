@@ -10,21 +10,42 @@
     text-align: center;
 }
 
-.toggle-dark-mode{
+.toggle-dark-mode {
+  text-align: center;
+  margin-top: 20px;
+
+
+}
 
 body {
   transition: background-color 0.5s ease, color 0.5s ease;
-  background-color: rgba(240, 232, 232, 0.753);
+  background-color: rgba(9, 178, 200, 0.401);
   color: rgb(8, 2, 23);
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 10px 3px;
+
+
 }
 
 .dark-mode {
   background-color: #211084;
   color: #f1f1f1;
+
+}
+
+.dark-mode input,
+.dark-mode select {
+  background-color: #dfd4d4;
+  color: #ffffff;
+  border: 1px solid #555;
+
+
 }
 
 button#toggle-dark-mode {
-  position: fixed;
+  position: flxed;
   top: 1rem;
   right: 1rem;
   padding: 10px 20px;
@@ -33,4 +54,5 @@ button#toggle-dark-mode {
   border-radius: 5px;
   background-color: #333;
   color: white;
-}}
+
+}

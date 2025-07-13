@@ -1,13 +1,23 @@
-.h1-container-form{
-    background-color: rgb(209, 13, 183);
-    text-align: center;
+/* Title at the top of the form */
+.form-title {               /* was: .h1-container-form */
+  background-color: rgb(209, 13, 183);
+  text-align: center;
+  color: #fff;              /* makes text readable on magenta */
+  padding: 0.5rem 0;        /* gives the heading some breathing room */
 }
 
-.h6-container{
-    text-align: center;
+/* Optional subtitle text */
+.form-subtitle {            /* was: .h6-container */
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-img-container{
-    flex-direction: row;
-    padding: 10px 15px ;
+/* Row of images (or icons, inputs, etc.) */
+.img-container {
+  display: flex;            /* enable flexbox */
+  flex-direction: row;      /* default, but explicit is fine */
+  gap: 15px;                /* modern way to space flex items */
+  padding: 10px 15px;
+  justify-content: center;  /* center images horizontally */
+  align-items: center;      /* center them vertically */
 }

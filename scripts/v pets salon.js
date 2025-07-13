@@ -65,7 +65,7 @@ function displayPets() {
 function registerPet(event) {
     event.preventDefault();
 
-    const form = document.getElementById("petRegistrationForm"); // Corrected ID and spelling
+    const form = document.getElementById("petRegistrationForm"); 
     const name = form.elements["petName"].value;
     const age = form.elements["petAge"].value;
     const gender = form.elements["petGender"].value;
@@ -77,6 +77,8 @@ function registerPet(event) {
     displayPets(); // Refresh pet list
 
     console.log("Registered:", newPet);
+
+    
 }
 
 // Dark mode toggle
@@ -89,3 +91,5 @@ toggleButton.addEventListener("click", () => {
 // Initial load
 displaySalonInformation();
 displayPets();
+
+form.reset();

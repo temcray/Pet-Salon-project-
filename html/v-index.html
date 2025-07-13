@@ -30,7 +30,7 @@
   </nav>
 
   <div class="h1-container">
-    <h1>Welcome to...</h1>
+    <h1>Welcome to Victoria's Pet Salon</h1>
   </div>
 
   <div id="salonContainer"></div>
@@ -39,17 +39,17 @@
   <form id="petRegistrationForm" onsubmit="registerPet(event)">
     <div>
       <label for="petName">Name</label>
-      <input type="text" name="petName" placeholder="Pet Name">
+      <input type="text" id="petName" name="petName" placeholder="Pet Name"><br><br>
     </div>
 
     <div>
       <label for="petAge">Age</label>
-      <input type="number" name="petAge" placeholder="Pet Age">
+      <input type="number" id="petAge" name="petAge" placeholder="Pet Age"><br><br>
     </div>
 
     <div>
       <label for="petGender">Gender</label>
-      <select name="petGender" aria-placeholder="Pet Gender">
+      <select id="petGender" name="petGender"><br><br>
         <option value="">Select</option>
         <option value="Male">Male</option>
         <option value="Female">Female</option>
@@ -58,7 +58,7 @@
 
     <div>
       <label for="petService">Service</label>
-      <select name="petService" aria-placeholder="Service">
+      <select id="petService" name="petService"><br><br>
         <option value="">Select</option>
         <option value="Grooming">Grooming</option>
         <option value="Dog Training">Dog Training</option>
@@ -68,45 +68,25 @@
 
     <div>
       <label for="petBreed">Breed</label>
-      <input type="text" name="petBreed" placeholder="Breed">
+      <input type="text" id="petBreed" name="petBreed" placeholder="Breed"><br><br>
     </div>
 
-    <button type="submit">Register</button>
+    <button type="submit">Register</button><br><br>
   </form>
 
   <div id="petsContainer"></div>
   <p id="petlist"></p>
   <p id="demo"></p>
 
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://th.bing.com/th/id/OIP.qQNJe-7R1BkUr8unpqChCAHaFS?w=284&h=203" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://th.bing.com/th/id/OIP.wlRadiJX7QfmQIPxwxsbUgHaE7?w=274&h=183" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://th.bing.com/th/id/OIP.ys1KZJhW1MAKdzaw4sHVtQHaE7?w=264&h=180" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
 
-  <div class="toggle-dark-mode">
+  <div class="text-center my-4">
     
-    <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    <button id="toggle-dark-mode" class="btn btn-dark">Toggle Dark Mode</button>
   </div>
 
   <div class="h6-container">
-    <h6>&copy; 2025 Tatiana E.</h6>
+    <h6>&copy; 2025 Victoria's Pet Salon/Tatiana E.</h6>
   </div>
 
   <script src="/scripts/v pets salon.js"></script>

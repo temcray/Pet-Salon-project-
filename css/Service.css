@@ -9,5 +9,18 @@
 }
 
 .daycare-container{
-    padding: 20px 15px;
+    background-image: url('/html/img-pets/OIP\ \(2\).webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+    text-align: center;
+
+}
+
+.daycare-container img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+
 }
